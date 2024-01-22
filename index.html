@@ -30,6 +30,11 @@
       background-color:#FF4240 ;
       color:#fff;
       border-radius: 8px;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .mybtn:hover{
+      background-color: #eb6945;
     }
   </style>
 </head>
@@ -83,7 +88,7 @@
       <!--========== slider 1 ========-->
       <div id="slide1" class="lg:h-[70vh] carousel-item relative w-full">
         <img src="images/1.png" class="w-full object-cover" />
-        <div class="absolute flex  gap-10 bottom-3 lg:left-3 left-1/2 -translate-x-1/2 lg:translate-x-0">
+        <div class="absolute flex  gap-10 bottom-3 lg:bottom-14 lg:left-3 left-1/2 -translate-x-1/2 lg:translate-x-0">
           <a href="#slide3" class="btn btn-circle bg-black text-white hover:bg-slate-600">❮</a> 
           <a href="#slide2" class="btn btn-circle bg-black text-white hover:bg-slate-600">❯</a>
         </div>
@@ -92,7 +97,7 @@
       <!--========== slider 2 ========-->
       <div id="slide2" class="lg:h-[70vh] carousel-item relative w-full">
         <img src="images/2.png" class="w-full object-cover" />
-        <div class="absolute flex  gap-10 bottom-3 lg:left-3 left-1/2 -translate-x-1/2 lg:translate-x-0">
+        <div class="absolute flex  gap-10 lg:bottom-14 bottom-3 lg:left-3 left-1/2 -translate-x-1/2 lg:translate-x-0">
           <a href="#slide1" class="btn btn-circle bg-black text-white hover:bg-slate-600">❮</a> 
           <a href="#slide3" class="btn btn-circle bg-black text-white hover:bg-slate-600">❯</a>
         </div>
@@ -102,7 +107,7 @@
       <!--========== slider 3 ========-->
       <div id="slide3" class="carousel-item relative w-full lg:h-[70vh]">
         <img src="images/3.png" class="w-full object-cover" />
-        <div class="absolute flex  gap-10 bottom-3 lg:left-3 left-1/2 -translate-x-1/2 lg:translate-x-0">
+        <div class="absolute flex  gap-10 lg:bottom-14 bottom-3 lg:left-3 left-1/2 -translate-x-1/2 lg:translate-x-0">
           <a href="#slide2" class="btn btn-circle bg-black text-white hover:bg-slate-600">❮</a> 
           <a href="#slide1" class="btn btn-circle bg-black text-white hover:bg-slate-600">❯</a>
         </div>
@@ -115,6 +120,69 @@
       <p>Gathered on the expansive field, a vibrant assembly of heroes from diverse backgrounds and disciplines converge to share their stories of triumph and resilience. </p>
     </div>
   </header>
+
+  <!-- =======Professional Hockeys Club======= -->
+  <main>
+    <section class="lg:my-24 my-10">
+      <div class="lg:w-1/2 lg:mx-auto text-center space-y-3">
+        <h2 class="text-2xl lg:text-4xl font-bold">Professional Hockeys Club</h2>
+        <p>
+          Professional Hockey's Club, a powerhouse of skill and teamwork, dominates the ice with precision and passion. United by a shared love for the game, they exemplify excellence in every match.
+        </p>
+      </div>
+
+      <!-- Hockeys Club card -->
+      <div class="grid grid-cols-1 md:grid-cols-4 mt-10 lg:gap-10 gap-5 w-4/5 mx-auto lg:w-full">
+        <!-- Prayer Facility -->
+        <div class="flex flex-col p-3">
+          <div class="radial-progress mx-auto text-red-500 rotate-180" style="--value:87;" role="progressbar">
+            <span class="text-black font-extrabold rotate-180">87%</span>
+          </div>
+
+          <div class="text-center space-y-2 mt-4">
+            <h5 class="text-lg font-bold">prayer Facility</h5>
+            <p>Our company offers a serene prayer space for employees' convenience. </p>
+          </div>
+        </div>
+
+
+        <!-- Experienced Coach -->
+        <div class="flex flex-col p-3">
+          <div class="radial-progress text-green-500 rotate-180 mx-auto" style="--value:95;" role="progressbar"><span class="text-black font-extrabold rotate-180">95%</span></div>
+
+          <div class="text-center space-y-2 mt-4">
+            <h5 class="text-lg font-bold">Experienced Coach</h5>
+            <p>Our club benefits from an experienced coach, guiding players with wisdom, strategy, and profound expertise. </p>
+          </div>
+        </div>
+
+        <!-- Senior Player -->
+        <div class="flex flex-col p-3">
+          <div class="radial-progress text-orange-400 rotate-180 mx-auto" style="--value:90;" role="progressbar"><span class="text-black font-extrabold rotate-180">90%</span></div>
+
+          <div class="text-center space-y-2 mt-4">
+            <h5 class="text-lg font-bold">Senior Player</h5>
+            <p>The senior player in our club is a guiding force, inspiring with experience and skill.</p>
+          </div>
+        </div>
+    
+
+        <!-- Training Ground -->
+        <div class="flex flex-col p-3">
+          <div class="radial-progress text-blue-400 rotate-180 mx-auto" style="--value:80;" role="progressbar"><span class="text-black font-extrabold rotate-180">80%</span></div>
+
+          <div class="text-center space-y-2 mt-4">
+            <h5 class="text-lg font-bold">Training Ground</h5>
+            <p>Our company boasts a top-notch training ground for employee development. </p>
+          </div>
+        </div>
+        
+        
+      </div>
+    </section>
+
+    
+  </main>
 
 </div>
 </body>
