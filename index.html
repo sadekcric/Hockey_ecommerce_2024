@@ -6,7 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- ========title+favicon======== -->
-  <title>Document</title>
+  <title>hockeys|e-commerce</title>
+  <link rel="shortcut icon" href="Images/10.png" type="image/x-icon">
 
   <!-- ======google font manrope========== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,15 +19,103 @@
   <!-- ==========daisy ui + tailwind link -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <!--========= style========= -->
   <style>
     .font{
       font-family: 'Manrope', sans-serif;
     }
+    .mybtn{
+      padding:15px 24px ;
+      background-color:#FF4240 ;
+      color:#fff;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body class="font">
-  
+  <!-- =====container========= -->
+<div class="p-3 lg:w-4/5 lg:mx-auto">
+
+  <!--========= Navbar========= -->
+  <nav>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+            
+          </ul>
+        </div>
+        <p>
+          <a class=" btn-ghost text-3xl font-extrabold">Hockey<span class="text-red-600 font-extrabold text-3xl">’</span>s</a>
+        </p>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class="relative hidden lg:block mr-5">
+          <input type="search" name="" id="" class="py-3 px-4 ">
+          <i class='bx bx-search absolute right-3 top-3 text-xl text-gray-400'></i>
+        </div>
+        <a class="mybtn">Get Ticket</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =======header carousel======== -->
+  <header class="relative">
+    <div class="carousel w-full">
+      <!--========== slider 1 ========-->
+      <div id="slide1" class="lg:h-[70vh] carousel-item relative w-full">
+        <img src="images/1.png" class="w-full object-cover" />
+        <div class="absolute flex  gap-10 bottom-3 lg:left-3 left-1/2 -translate-x-1/2 lg:translate-x-0">
+          <a href="#slide3" class="btn btn-circle bg-black text-white hover:bg-slate-600">❮</a> 
+          <a href="#slide2" class="btn btn-circle bg-black text-white hover:bg-slate-600">❯</a>
+        </div>
+      </div> 
+
+      <!--========== slider 2 ========-->
+      <div id="slide2" class="lg:h-[70vh] carousel-item relative w-full">
+        <img src="images/2.png" class="w-full object-cover" />
+        <div class="absolute flex  gap-10 bottom-3 lg:left-3 left-1/2 -translate-x-1/2 lg:translate-x-0">
+          <a href="#slide1" class="btn btn-circle bg-black text-white hover:bg-slate-600">❮</a> 
+          <a href="#slide3" class="btn btn-circle bg-black text-white hover:bg-slate-600">❯</a>
+        </div>
+      </div> 
+
+
+      <!--========== slider 3 ========-->
+      <div id="slide3" class="carousel-item relative w-full lg:h-[70vh]">
+        <img src="images/3.png" class="w-full object-cover" />
+        <div class="absolute flex  gap-10 bottom-3 lg:left-3 left-1/2 -translate-x-1/2 lg:translate-x-0">
+          <a href="#slide2" class="btn btn-circle bg-black text-white hover:bg-slate-600">❮</a> 
+          <a href="#slide1" class="btn btn-circle bg-black text-white hover:bg-slate-600">❯</a>
+        </div>
+      </div> 
+    </div>
+
+    <!-- Meet all the heroes from the field -->
+    <div class="bg-black text-white space-y-3 p-6 rounded-lg lg:w-1/2 lg:absolute bottom-10 right-5">
+      <h3>Meet all the heroes from the field</h3>
+      <p>Gathered on the expansive field, a vibrant assembly of heroes from diverse backgrounds and disciplines converge to share their stories of triumph and resilience. </p>
+    </div>
+  </header>
+
+</div>
 </body>
 </html>
